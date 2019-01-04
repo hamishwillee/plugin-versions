@@ -23,7 +23,7 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
             var $option = $('<option>', {
                 'selected': (current === undefined ? version.selected : (current === version.value)),
                 'value': version.value,
-                'text': version.text
+                'text': version.text+current
             });
 
             $option.appendTo($select);
